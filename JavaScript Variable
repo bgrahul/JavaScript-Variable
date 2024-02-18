@@ -1,0 +1,80 @@
+/*
+* JavaScript Variable names are case-sensitive
+! variable names cannot contain spaces.
+* Variables cannot be the same as feserved keywords such as `if` of `const`.
+* By convention, JavaScript Variable names are written in camelCase.
+* Variables should be given descriptive names that indicate their content and usage (e.g.'sellingPrice' and 'costPrice' rather than 'x' and 'y').
+* You can not add number firsh
+*_ , $ is acceptable but - not accaptable
+*/
+
+/* 
+* Var Variable
+* You Can re declare
+* You can re assaign
+* Global Scooped
+* var is hosted
+*/
+
+var a = 10;
+var a = 20;
+a = 'Bangladesh';
+
+{
+    var blocked = '30';
+    console.log(a)
+}
+
+console.log(blocked);
+
+console.log(a);
+
+let fistName; 
+
+
+var country = 'Bangladesh';
+console.log(country);
+
+let fruits = `Apple`;
+console.log(`${fruits} is my fav, ${fruits} i like to eat`);
+
+/* 
+* let Variable
+! You Can not re declare
+* You can re assaign
+? Block Scooped
+! let is not hosted
+*/
+let b= 10;
+b= 11;
+
+{
+console.log(b)
+}
+
+
+let people= 'SomeOne';
+console.log(people);
+
+/* 
+* const Variable
+! You Can not re declare
+! You can not re assaign
+* Block Scooped
+! const is not hosted
+*/
+const c = 10;
+{
+    const d =50;
+    console.log(c);
+    console.log(d)
+}
+
+const parson = {
+    firstName: 'Bikrom',
+    age: 28,
+};
+parson.country = 'Bangladesh';
+parson.age = 28;
+
+console.log(parson)
